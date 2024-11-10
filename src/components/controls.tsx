@@ -1,5 +1,13 @@
+import React from "react";
 
-const ControlPanel = ({ name, greeting, onChange}: {name: string, greeting: string, onChange: React.ChangeEventHandler<HTMLInputElement>}) => {
+type ControlPanelProps = {
+  name: string;
+  greeting: string;
+  onChange: React.ChangeEventHandler<HTMLInputElement>;
+};
+
+
+const ControlPanel = ({ name, greeting, onChange}: ControlPanelProps) => {
   return (
     <form
       className="flex flex-row gap-4 text-white bg-primary-10"
