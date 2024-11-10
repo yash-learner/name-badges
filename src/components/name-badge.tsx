@@ -1,3 +1,5 @@
+const adTwo = (n: number): number => n + 2;
+
 const NameBadge = ({ name }: { name: string }) => {
   return (
     <section className="badge">
